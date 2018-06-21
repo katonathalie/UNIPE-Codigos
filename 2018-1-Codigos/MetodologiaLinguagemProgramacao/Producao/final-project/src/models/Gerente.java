@@ -5,19 +5,22 @@ package models;
  * @author Grupo de Java - P3 - CC
  */
 public class Gerente extends Funcionario {
-	private static int contador_id; //est�tico para valor poder ser usado em v�rios objetos
+	private static int contador_id; //estático para valor poder ser usado em vários objetos
 	
 	/**
-	 * Comiss�o de venda atribu�da ao gerente, em percentagem e deve ser �nica para todos os objetos
+	 * Comissão de venda atribuída ao gerente, em percentagem e deve ser única para todos os objetos
 	 */
 	
 	/**
-	 * Construtor da classe Gerente: 20% de comiss�o
+	 * Construtor da classe Gerente: 20% de comissão
 	 */
 	public Gerente() {
 		this.comissao = 0.20d;
 	}
-
+	
+	/**
+	* Método que recebe e salva o nome a ser cadastrado
+	*/
 	public void cadastraNome() {
 		String nome_temp = "";
 		
@@ -27,15 +30,21 @@ public class Gerente extends Funcionario {
 		this.setNome(nome_temp);
 	}
 	
+	/**
+	* Método que recebe e salva o endereço a ser cadastrado
+	*/	
 	public void cadastraEndereco() {
 		String endereco_temp = "";
 		
-		System.out.print("Endere�o: ");
+		System.out.print("Endereço: ");
 		endereco_temp = input.nextLine();
 
 		this.setEndereco(endereco_temp);
 	}
-		
+
+	/**
+	* Método que chama os métodos de cadastrar nome e endereço de acordo com a informação digitada pelo usuário e atribui ao cadasto um id
+	*/	
 	public void cadastrarDados() {		
 		this.cadastraNome();
 		this.cadastraEndereco();
