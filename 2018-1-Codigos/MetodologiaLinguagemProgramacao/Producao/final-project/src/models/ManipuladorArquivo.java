@@ -7,7 +7,10 @@ import java.io.IOException;
 public class ManipuladorArquivo {
 	
 //ESCREVER/SALVAR:
-	
+
+	/**
+	* Método que salva em arquivo as informações de vendedor
+	*/	
     public static boolean salvaVendedor(Vendedor vendedor) throws IOException {
     	boolean sucess = false;
     	try {
@@ -22,13 +25,15 @@ public class ManipuladorArquivo {
     		sucess = true;
 			
 		} catch(Exception ex) {
-			System.out.println("Falha na grava��o dos dados. Contate o suporte t�cnico.");
+			System.out.println("Falha na gravação dos dados. Contate o suporte técnico.");
 			sucess = false;
 		}
     	
     	return sucess;
     }
- 
+	/**
+	* Método que salva em arquivo as informações de gerente
+	*/ 
     public static boolean salvaGerente(Gerente gerente) throws IOException {
     	boolean sucess = false;
     	
@@ -44,13 +49,15 @@ public class ManipuladorArquivo {
     		sucess = true;
 			
 		} catch(Exception ex) {
-			System.out.println("Falha na grava��o dos dados. Contate o suporte t�cnico.");
+			System.out.println("Falha na gravação dos dados. Contate o suporte técnico.");
 			sucess = false;
 		}
     	
     	return sucess;
     }
- 
+	/**
+	* Método que salva em arquivo as informações de produto
+	*/  
     public static boolean salvaProduto(Produto produto) throws IOException {
     	boolean sucess = false;
     	try {
@@ -66,13 +73,15 @@ public class ManipuladorArquivo {
     		sucess = true;
 			
 		} catch(Exception ex) {
-			System.out.println("Falha na grava��o dos dados. Contate o suporte t�cnico.");
+			System.out.println("Falha na gravação dos dados. Contate o suporte técnico.");
 			sucess = false;
 		}
     	
     	return sucess;
     }
- 
+ 	/**
+	* Método que salva em arquivo as informações de venda
+	*/ 
     public static boolean salvaVenda(Venda venda) throws IOException {
     	boolean sucess = false;
     	try {
@@ -90,7 +99,7 @@ public class ManipuladorArquivo {
     		sucess = true;
 			
 		} catch(Exception ex) {
-			System.out.println("Falha na grava��o dos dados. Contate o suporte t�cnico.");
+			System.out.println("Falha na gravação dos dados. Contate o suporte técnico.");
 			sucess = false;
 		}
     	
