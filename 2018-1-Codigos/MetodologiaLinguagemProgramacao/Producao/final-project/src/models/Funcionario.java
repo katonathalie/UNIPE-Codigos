@@ -1,6 +1,6 @@
 package models;
 
-//classe abstrata: n„o pode ser instanciada
+//classe abstrata: n√£o pode ser instanciada
 
 public abstract class Funcionario implements Cadastro {
 	protected String nome;
@@ -8,10 +8,13 @@ public abstract class Funcionario implements Cadastro {
 	protected int codigo;
 	protected double comissao;
 	
+	/**
+	 * m√©todo que exibe os dados principais de cadastro de funcion√°rios
+	 */
 	public void exibirDados() throws Exception {
-		System.out.println("CÛdigo: " + this.getCodigo());
+		System.out.println("C√≥digo: " + this.getCodigo());
 		System.out.println("Nome: " + this.getNome());
-		System.out.println("EndereÁo: " + this.getEndereco());
+		System.out.println("Endere√ßo: " + this.getEndereco());
 	}
 	
 	public String getNome() {
